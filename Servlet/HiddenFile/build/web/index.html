@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--in case of hidden form field a hidden textfield is used for maintaing the
+state of an user.
+in such case, we store the information in the hidden field and get it from
+another servlet. This approch is better if we have to submit from in all the 
+pages and we don't want to depend on the browser.-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+    </head>
+    <body>
+        <div class="container ">
+            <div class="jumbotron text-center">
+                <form action="NewServlet" method="get">
+                    Enter  uname:-<input type="text" name="n1"><br><br>
+                    Enter password:- <input type="password" name="p1"><br><br>
+                    <button type="submit" class="btn btn-info">submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
