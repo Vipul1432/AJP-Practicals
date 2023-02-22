@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<!--ServletConfig Interface
+--- for individual servlet = use servlet config
+--- for entire servlet = use servletContest
+
+an object of servletconfig is created by the web container for each servlet.
+this object can be used to get configuration information from web.xml file.
+  if the configuration inforamtion is modified from the web.xml file, we dont 
+  need to change the sevlet. so it is easier to mange the web application if
+  any specific content is modified from time to time.-->
+
+<html>
+    <body>
+        <form action="NewServlet" method="get">
+            Enter  name:-<input type="text" name="n1"><br><br>
+            Enter pass:- <input type="password" name="p1"><br><br>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
