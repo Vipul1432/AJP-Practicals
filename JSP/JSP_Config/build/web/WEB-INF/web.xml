@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <jsp-file>/newjsp.jsp</jsp-file>
+        
+        <init-param>
+            <param-name>info</param-name>
+            <param-value>Abhi_is_simple_name_of_a_individual</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/newjsp</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>abhiraj_verma</param-value>
+    </context-param>
+    
+    <!--    application implicit object of type ServletContext it has allowed for all jsp-->
+    
+</web-app>
