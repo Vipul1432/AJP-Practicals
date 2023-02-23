@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+	<h1>Simple JSF Tags Example</h1>
+	
+	<h:form>
+		Enter First Name:<h:inputText id="name" value="#{helloworld.uname}">
+                    <f:validateLength minimum="3" maximum="15"/>
+		</h:inputText><br></br>
+		
+               Enter Last Name: <h:inputText id="name-id" value="#{helloworld.lname}" validatorMessage="Your last name can have only Alphabets">  
+                <f:validateRegex pattern="^([a-zA-Z]+(.)?[\s]*)$" />  
+               </h:inputText><br/><br/>  
+
+                Enter Mobile No:<h:inputText id="mob_no" required="true" value="#{helloworld.mobno}" maxlength="10"
+                                             validatorMessage="Please enter 10 digits for mobile number"> <font style="color:red"> * </font>
+                <f:validateLength minimum="10" maximum="10"/>
+                </h:inputText><br></br>
+		
+		Enter Gender<h:selectOneRadio value="#{helloworld.gender}"> 
+		<f:selectItem itemValue="male" itemLabel="Male"/>
+		<f:selectItem itemValue="female" itemLabel="Female"/>
+		</h:selectOneRadio><br></br>
+		
+		Enter Address:<h:inputText id="address" value="#{helloworld.address}"/><br></br>
+		
+		Enter Password: <h:inputSecret id="pwd" value="#{helloworld.password}"/><br></br>
+			
+		Enter Age :
+                <h:inputText id="age" value="#{helloworld.age}" validatorMessage="Your age must be between 18 and 65">  
+                    <f:validateLongRange minimum="18" maximum="65" />  
+                </h:inputText><br/><br/>
+                
+                <h:commandButton value="Register Me" action="process_registration" />	
+	
+	</h:form>
+	
+</h:body>
+</html>

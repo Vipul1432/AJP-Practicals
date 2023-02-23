@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  
+xmlns:h="http://xmlns.jcp.org/jsf/html"  >  
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+       <h2><h:outputText value="Hello #{helloworld.uname}"/></h2>  
+       <h4><h:outputText value="You have Registered with us Successfully, Your Details are The Following."/></h4>  
+   <table>
+   <tr>  
+        <td><b>Last Name: </b></td>  
+        <td><h:outputText value="#{helloworld.lname}"/><br/></td>  
+    </tr>
+    <tr>  
+        <td><b>Mobile No : </b></td>  
+        <td><h:outputText value="#{helloworld.mobno}"/><br/></td>  
+    </tr>  
+    <tr>  
+        <td><b>Password:</b></td>  
+        <td><h:outputText value="#{helloworld.password}"/><br/></td>  
+    </tr>  
+    <tr>  
+        <td><b>Gender:</b></td>  
+        <td><h:outputText value="#{helloworld.gender}"/><br/></td>  
+    </tr>  
+    <tr>  
+        <td><b>Age: </b></td>  
+        <td><h:outputText value="#{helloworld.age}"/></td>  
+    </tr> 
+   </table>  
+  </body>
+</html>
