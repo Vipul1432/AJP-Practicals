@@ -1,0 +1,24 @@
+NOTE:
+Given Projects are compiled with Hibernate 3.x libraries files.
+
+If you are using NetBeans 8.x (uses Hibernate 4.x version) then you 
+create new project and create same files as given in the solution.
+------------------------------------------------------------------
+First create following schema in MySQL.
+
+Schema/database name: 
+hibernate_db
+
+Table name:
+temployee
+
+Query:
+
+CREATE  TABLE `hibernate_db`.`temployee` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `first_name` VARCHAR(45) NULL ,
+  `last_name` VARCHAR(45) NULL ,
+  `salary` INT NULL ,
+  PRIMARY KEY (`id`) );
+
+-------------------------------
